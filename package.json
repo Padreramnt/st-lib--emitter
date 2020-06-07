@@ -1,5 +1,6 @@
 {
 	"author": "padreramnt",
+	"description": "Typed event emitter",
 	"dependencies": {
 		"tslib": "^1.9.3"
 	},
