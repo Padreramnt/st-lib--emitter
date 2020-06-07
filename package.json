@@ -1,0 +1,32 @@
+{
+	"author": "padreramnt",
+	"dependencies": {
+		"tslib": "^1.9.3"
+	},
+	"devDependencies": {
+		"rimraf": "^3.0.1",
+		"typescript": "^3.5.1"
+	},
+	"files": [
+		"lib"
+	],
+	"keywords": [
+		"st-lib",
+		"emitter"
+	],
+	"license": "MIT",
+	"main": "lib/index.js",
+	"module": "lib/index.js",
+	"name": "@st-lib/emitter",
+	"scripts": {
+		"build": "tsc -p ./tsconfig.json",
+		"prebuild": "rimraf -rf ./lib",
+		"prepublishOnly": "npm run build",
+		"prestart": "rimraf -rf ./lib",
+		"start": "tsc -p ./tsconfig.json -w",
+		"start:tsc": "tsc",
+		"test": "tsc -p ./tsconfig.json --noEmit"
+	},
+	"types": "lib/index.d.ts",
+	"version": "1.0.0"
+}
