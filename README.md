@@ -64,6 +64,21 @@ const off = emitter.on(0, () => {
 off()
 ```
 
+## Emitter#offAll
+
+Deletes all event handlers.
+
+```ts
+emitter.on(0, () => { console.log('will not fire') })
+emitter.on(0, () => { console.log('will not fire') })
+emitter.on(0, () => { console.log('will not fire') })
+emitter.on(0, () => { console.log('will not fire') })
+emitter.on(0, () => { console.log('will not fire') })
+emitter.on(0, () => { console.log('will not fire') })
+
+emitter.offAll(0)
+```
+
 ## Emitter#once
 
 Uses a handler only once.
@@ -92,7 +107,6 @@ try {
 // will be fine =3
 emitter.emit(0) // no console log
 ```
-
 
 ## Emitter#emit
 
