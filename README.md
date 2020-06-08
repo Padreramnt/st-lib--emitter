@@ -196,7 +196,7 @@ export interface Success<E, A extends any[], R> {
 
 ```ts
 export interface Failure<E, A extends any[], R> {
-	ok: true // used to separate declarations
+	ok: false // used to separate declarations
 	handler: (...args: A) => R // current handler
 	args: A, // event arguments
 	event: E, // current event
